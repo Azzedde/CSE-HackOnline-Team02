@@ -26,6 +26,7 @@ export default function Login(){
     }
 
     return(
+        <div className="max-w-sm ">
         
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
         <div className="-space-y-px">
@@ -48,9 +49,13 @@ export default function Login(){
             }
         </div>
 
+
         <FormExtra/>
         <FormAction handleSubmit={handleSubmit} text="Login"/>
+        
 
       </form>
+      
+      </div>
     )
 }
