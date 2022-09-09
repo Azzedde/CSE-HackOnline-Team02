@@ -16,7 +16,8 @@ export default function () {
             consequat.
           </p>
 
-          <Button text="VOIR PLUS" link="/" />
+          <Button text="VOIR PLUS" link="/about" />
+
         </div>
 
         <img

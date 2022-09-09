@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 const Nav = () => {
   let Links = [
     { name: "ACCEUIL", link: "/" },
-    { name: "SUR-NOUS", link: "/" },
+    { name: "SUR-NOUS", link: "/about" },
     { name: "UNIVERSITÉS", link: "/" },
     { name: "CLUBS", link: "/" },
     // { name: "CONTACT", link: "/" },
@@ -34,12 +35,13 @@ const Nav = () => {
         >
           {Links.map((link) => (
             <li key={link.name} className="md:mx-16 text-xl md:my-0 my-7">
-              <a
-                href={link.link}
+              
+              <Link
+                to={link.link}
                 className="hover:decoration-wejahni-cyan hover:underline hover:decoration-double hover:text-wejahni-purple  text-wejahni-blue duration-500 font-Inter font-[400] "
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
           <Button link="/login" text="SE CONNECTER" />
