@@ -6,6 +6,9 @@ import Home from "./pages/Home";
 import SignupPage from './pages/Signup';
 import LoginPage from './pages/Login';
 import About from "./pages/About";
+import Universities from "./pages/Universities";
+import Clubs from "./pages/Clubs";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -18,8 +21,11 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/universities" element={<Universities />} />
+        <Route path="/clubs" element={<Clubs />} />
       </Routes>
 
+      <Footer/>
 
     </div>
   );
