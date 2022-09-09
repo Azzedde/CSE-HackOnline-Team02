@@ -1,25 +1,24 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+// import Logo from '../images/Wejahni-Logo.svg'
+import Logo from "../images/Logo.png";
 
 const Nav = () => {
   let Links = [
     { name: "ACCEUIL", link: "/" },
     { name: "SUR-NOUS", link: "/about" },
-    { name: "UNIVERSITÉS", link: "/" },
-    { name: "CLUBS", link: "/" },
+    { name: "UNIVERSITÉS", link: "/universities" },
+    { name: "CLUBS", link: "/clubs" },
     // { name: "CONTACT", link: "/" },
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="shadow-lg shadow-wejahni-cyan w-full fixed top-0 left-0">
-      <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
-        <div
-          className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-      text-transparent"
-        >
-          WEJAHNI
-        </div>
+    <div className="shadow-lg shadow-wejahni-cyan w-full fixed top-0 left-0 z-10">
+      <div className="md:flex items-center justify-between bg-white py-2 md:px-10 px-7">
+        <Link to={"/"}>
+          <img className="w-[130px] h-12 pb-1" src={Logo} />
+        </Link>
 
         <div
           onClick={() => setOpen(!open)}
@@ -34,8 +33,7 @@ const Nav = () => {
           }`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="md:mx-16 text-xl md:my-0 my-7">
-              
+            <li key={link.name} className="md:mx-16 text-base md:my-0 my-3">
               <Link
                 to={link.link}
                 className="hover:decoration-wejahni-cyan hover:underline hover:decoration-double hover:text-wejahni-purple  text-wejahni-blue duration-500 font-Inter font-[400] "
