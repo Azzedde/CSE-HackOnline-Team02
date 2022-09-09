@@ -34,7 +34,7 @@ export default function () {
         />
       </div>
     </div>
-    {/* <Features/> */}
+    <Features/>
     </>
 
   );
