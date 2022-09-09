@@ -7,7 +7,7 @@ import Logo from "../images/Logo.png";
 const Nav = () => {
   let Links = [
     { name: "ACCEUIL", link: "/" },
-    { name: "SUR-NOUS", link: "/about" },
+    { name: "DÉCOUVREZ-NOUS", link: "/about" },
     { name: "UNIVERSITÉS", link: "/universities" },
     { name: "CLUBS", link: "/clubs" },
     // { name: "CONTACT", link: "/" },
