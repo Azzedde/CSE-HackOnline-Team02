@@ -17,6 +17,7 @@ export default function () {
           </p>
 
           <Button text="VOIR PLUS" link="/about" />
+
         </div>
 
         <img

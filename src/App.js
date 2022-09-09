@@ -7,6 +7,7 @@ import SignupPage from './pages/Signup';
 import LoginPage from './pages/Login';
 import About from "./pages/About";
 
+
 function App() {
   return (
     <div className="bg-white w-full h-screen ">
@@ -19,8 +20,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
       </Routes>
 
-      {/* <Header />
-      <Home /> */}
+
     </div>
   );
 }
