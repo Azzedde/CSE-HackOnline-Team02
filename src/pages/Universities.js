@@ -7,6 +7,9 @@ import "swiper/css";
 import UnivThumbnail1 from "../images/EsiPic.svg";
 import UnivThumbnail2 from "../images/PolytechPic.svg";
 import { useMediaQuery } from "react-responsive";
+import SearchBar from "../components/SearchBar";
+import Filter from "../components/Filter";
+import HelpMeButton from "../components/HelpMeButton";
 function UniversitiesSwiper() {
   // const [isMobile, setIsMobile] = useState(false)
   const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
@@ -40,7 +43,7 @@ function UniversitiesSwiper() {
   // console.log(slidespreview);
   return (
     <Swiper
-      spaceBetween={1}
+      spaceBetween={20}
       // slidesPerView={(window.screen.width > 1500 ) ? 3.25 : (window.screen.width < 500 ) ? 1.25 : 2.25}
       slidesPerView={isMobile ? 1.3 : 3.3}
       onSlideChange={() => console.log("slide change")}
@@ -138,7 +141,7 @@ UnivCard.propTypes = {
 };
 const Universities = () => {
   return (
-    <div className="relative overflow-hidden" id="universities">
+    <div className="relative overflow-hidden " id="universities">
       <div className="">
         <div className=" flex flex-row justify-center mt-24 mb-10 ">
           <h1 className="  lg:text-5xl md:text-sm font-Inter text-wejahni-blue font-semibold underline decoration-wejahni-cyan ">
@@ -146,7 +149,7 @@ const Universities = () => {
           </h1>
         </div>
         <h1></h1>
-        <div className="flex flex-1 flex-col items-center lg:items-start ml-4">
+        <div className="flex flex-1 flex-col items-center  lg:items-start ml-4">
           <p className="text-base font-normal font-Inter text-wejahni-blue text-center lg:text-left mb-4">
             Une fois diplômé du baccalauréat, vient le moment de s’orienter et
             de choisir l’établissement où suivre sa formation. Renseignez-vous
@@ -156,7 +159,12 @@ const Universities = () => {
             Tout savoir sur les etablissements universitaires en Algerie !
           </h2>
         </div>
-        <div className="mt-7 ml-3">
+        <div className="flex lg:flex-row xs:flex-col xs:ml-5 justify-around lg:items-end items-start mt-7 xs:gap-3">
+          <SearchBar />
+          <Filter />
+          <HelpMeButton />
+        </div>
+        <div className="mt-16 mb-4 ml-3 ">
           <UniversitiesSwiper />
         </div>
       </div>

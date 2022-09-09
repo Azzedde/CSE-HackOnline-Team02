@@ -1,11 +1,12 @@
 import React from "react";
+import StatsSection from "../components/StatsSection";
 import Logo from "../images/Logo.png";
 
 export default function About() {
   return (
-    <div>
-      <div className="bg-white h-screen w-full pt-[100px] flex">
-        <div className=" flex flex-col items-center gap-7 ">
+    <>
+      <div className=" pt-[100px] flex  flex-col ">
+        <div className=" flex flex-col items-center gap-7  ">
           <div className="flex flex-row items-baseline gap-5">
             <h1 className="lg:text-4xl md:text-sm font-Inter text-wejahni-blue font-semibold underline decoration-wejahni-cyan">
               CONCERNANT
@@ -17,7 +18,7 @@ export default function About() {
             />
           </div>
           <div>
-            <p className="py-12 px-12 text-center">
+            <p className="py-12 px-12 text-center text-lg font-Inter font-normal">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
               nonummy nibh euixsod tincidunt ut laoreet dolore magna aliquam
               erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
@@ -34,7 +35,10 @@ export default function About() {
             </p>
           </div>
         </div>
+
+
+        <StatsSection/>
       </div>
-    </div>
+    </>
   );
 }

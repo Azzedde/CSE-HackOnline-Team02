@@ -2,9 +2,11 @@ import React from "react";
 import Button from "../components/Button";
 import Logo from "../images/Logo.png";
 import HomePageShape from "../images/HomePageShape.svg";
+import Features from "../components/Features";
 export default function () {
   return (
-    <div className="bg-white h-screen w-full pt-[100px] md:pl-40 ">
+    <>
+    <div className=" pt-[100px] md:pl-40 ">
       <div className="flex md:flex-row md:gap-[350px] xs:flex-col xs:items-center xs:gap-9 ">
         <div className="flex flex-col gap-5 items-center ">
           <img className="md:w-96  xs:w-56 " src={Logo} alt="Website-Logo" />
@@ -32,5 +34,8 @@ export default function () {
         />
       </div>
     </div>
+    {/* <Features/> */}
+    </>
+
   );
 }
