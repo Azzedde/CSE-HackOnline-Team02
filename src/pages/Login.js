@@ -84,8 +84,8 @@ export default function Login() {
                 <p className="mt-8 text-xs font-Inter text-center text-gray-700">
                     {" "}
                     Vous n'avez pas encore de compte ?{" "}
-                    <a
-                        href="#"
+                    <a 
+                        href="/signup"
                         className="font-medium text-purple-600 hover:underline"
                     >
                         Créez-en un !
@@ -94,8 +94,8 @@ export default function Login() {
             </div>
             <div className="w-full p-6 m-auto bg-white rounded-md lg:max-w-xl">
             <img  src={Logo} />
-            <b></b>
-            <h1 className="text-3xl font-inter text-center text-wejahni-blue-700 uppercase">
+            <br/> <br/> <br/>
+            <h1 className="text-5xl font-inter text-center text-wejahni-blue-700 uppercase">
                     CONNECTEZ VOUS A VOTRE COMPTE
                 </h1>
             </div>
